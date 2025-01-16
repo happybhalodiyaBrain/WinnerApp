@@ -11,6 +11,24 @@
 		BDE2541B2D395B6A002F5D0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2541A2D395B6A002F5D0E /* ContentView.swift */; };
 		BDE2541D2D395B6C002F5D0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE2541C2D395B6C002F5D0E /* Assets.xcassets */; };
 		BDE254202D395B6C002F5D0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE2541F2D395B6C002F5D0E /* Preview Assets.xcassets */; };
+		BDE2542E2D395F77002F5D0E /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2542D2D395F77002F5D0E /* AppRoute.swift */; };
+		BDE254302D395FB9002F5D0E /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2542F2D395FB9002F5D0E /* NavigationService.swift */; };
+		BDE2543A2D396192002F5D0E /* WinnerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE254392D396192002F5D0E /* WinnerList.swift */; };
+		BDE2543C2D3961B7002F5D0E /* WinnerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2543B2D3961B7002F5D0E /* WinnerDetails.swift */; };
+		BDE254412D396CE3002F5D0E /* FontConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE254402D396CE3002F5D0E /* FontConstant.swift */; };
+		BDE254432D396D9D002F5D0E /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE254422D396D9D002F5D0E /* AppConstant.swift */; };
+		BDE254462D396E2C002F5D0E /* Text + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE254452D396E2C002F5D0E /* Text + Extensions.swift */; };
+		BDE254482D396F59002F5D0E /* Color + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE254472D396F59002F5D0E /* Color + Extensions.swift */; };
+		BDE2544B2D397036002F5D0E /* Text + Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2544A2D397036002F5D0E /* Text + Modifier.swift */; };
+		BDE254502D3976DD002F5D0E /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2544F2D3976DD002F5D0E /* CustomHeader.swift */; };
+		BDE254522D39785B002F5D0E /* ImageConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE254512D39785B002F5D0E /* ImageConstant.swift */; };
+		BDE254582D397D31002F5D0E /* Almarai-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDE254562D397B00002F5D0E /* Almarai-Bold.ttf */; };
+		BDE254592D397D31002F5D0E /* Almarai-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDE254572D397B00002F5D0E /* Almarai-ExtraBold.ttf */; };
+		BDE2545A2D397D31002F5D0E /* Almarai-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDE254542D397B00002F5D0E /* Almarai-Light.ttf */; };
+		BDE2545B2D397D31002F5D0E /* Almarai-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDE254552D397B00002F5D0E /* Almarai-Regular.ttf */; };
+		BDE2545D2D39800C002F5D0E /* WinnerListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2545C2D39800C002F5D0E /* WinnerListData.swift */; };
+		BDE2545F2D398092002F5D0E /* WinnerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2545E2D398092002F5D0E /* WinnerListViewModel.swift */; };
+		BDE254612D398170002F5D0E /* WinnerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE254602D398170002F5D0E /* WinnerRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +37,25 @@
 		BDE2541A2D395B6A002F5D0E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDE2541C2D395B6C002F5D0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDE2541F2D395B6C002F5D0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BDE2542D2D395F77002F5D0E /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		BDE2542F2D395FB9002F5D0E /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
+		BDE254392D396192002F5D0E /* WinnerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerList.swift; sourceTree = "<group>"; };
+		BDE2543B2D3961B7002F5D0E /* WinnerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerDetails.swift; sourceTree = "<group>"; };
+		BDE2543D2D39679F002F5D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BDE254402D396CE3002F5D0E /* FontConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontConstant.swift; sourceTree = "<group>"; };
+		BDE254422D396D9D002F5D0E /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		BDE254452D396E2C002F5D0E /* Text + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text + Extensions.swift"; sourceTree = "<group>"; };
+		BDE254472D396F59002F5D0E /* Color + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extensions.swift"; sourceTree = "<group>"; };
+		BDE2544A2D397036002F5D0E /* Text + Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text + Modifier.swift"; sourceTree = "<group>"; };
+		BDE2544F2D3976DD002F5D0E /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
+		BDE254512D39785B002F5D0E /* ImageConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstant.swift; sourceTree = "<group>"; };
+		BDE254542D397B00002F5D0E /* Almarai-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Light.ttf"; sourceTree = "<group>"; };
+		BDE254552D397B00002F5D0E /* Almarai-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Regular.ttf"; sourceTree = "<group>"; };
+		BDE254562D397B00002F5D0E /* Almarai-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Bold.ttf"; sourceTree = "<group>"; };
+		BDE254572D397B00002F5D0E /* Almarai-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-ExtraBold.ttf"; sourceTree = "<group>"; };
+		BDE2545C2D39800C002F5D0E /* WinnerListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerListData.swift; sourceTree = "<group>"; };
+		BDE2545E2D398092002F5D0E /* WinnerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerListViewModel.swift; sourceTree = "<group>"; };
+		BDE254602D398170002F5D0E /* WinnerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +88,14 @@
 		BDE254172D395B6A002F5D0E /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				BDE254182D395B6A002F5D0E /* DemoAppApp.swift */,
+				BDE2543D2D39679F002F5D0E /* Info.plist */,
+				BDE2542B2D395D4F002F5D0E /* Resource */,
+				BDE2542A2D395D2E002F5D0E /* Uitility */,
+				BDE254292D395CC6002F5D0E /* Helpers */,
+				BDE254282D395CBE002F5D0E /* Services */,
+				BDE254272D395CBB002F5D0E /* Module */,
+				BDE254262D395CB8002F5D0E /* App */,
 				BDE2541A2D395B6A002F5D0E /* ContentView.swift */,
-				BDE2541C2D395B6C002F5D0E /* Assets.xcassets */,
 				BDE2541E2D395B6C002F5D0E /* Preview Content */,
 			);
 			path = DemoApp;
@@ -65,6 +107,180 @@
 				BDE2541F2D395B6C002F5D0E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BDE254262D395CB8002F5D0E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BDE254182D395B6A002F5D0E /* DemoAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BDE254272D395CBB002F5D0E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				BDE254322D39610B002F5D0E /* WinnerDetails */,
+				BDE254312D39609C002F5D0E /* WinnerList */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		BDE254282D395CBE002F5D0E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BDE2542C2D395F66002F5D0E /* enum */,
+				BDE2542F2D395FB9002F5D0E /* NavigationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BDE254292D395CC6002F5D0E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BDE2544E2D3976BF002F5D0E /* CommonView */,
+				BDE254492D397029002F5D0E /* Modifiers */,
+				BDE254442D396E20002F5D0E /* Extensions */,
+				BDE2543E2D396CC3002F5D0E /* Constant */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BDE2542A2D395D2E002F5D0E /* Uitility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Uitility;
+			sourceTree = "<group>";
+		};
+		BDE2542B2D395D4F002F5D0E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BDE254532D397AED002F5D0E /* Fonts */,
+				BDE2541C2D395B6C002F5D0E /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BDE2542C2D395F66002F5D0E /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				BDE2542D2D395F77002F5D0E /* AppRoute.swift */,
+			);
+			path = enum;
+			sourceTree = "<group>";
+		};
+		BDE254312D39609C002F5D0E /* WinnerList */ = {
+			isa = PBXGroup;
+			children = (
+				BDE254372D39614F002F5D0E /* Model */,
+				BDE254382D396153002F5D0E /* ViewModel */,
+				BDE254342D396140002F5D0E /* View */,
+			);
+			path = WinnerList;
+			sourceTree = "<group>";
+		};
+		BDE254322D39610B002F5D0E /* WinnerDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BDE254352D396145002F5D0E /* Model */,
+				BDE254362D39614A002F5D0E /* ViewModel */,
+				BDE254332D39613A002F5D0E /* View */,
+			);
+			path = WinnerDetails;
+			sourceTree = "<group>";
+		};
+		BDE254332D39613A002F5D0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDE2543B2D3961B7002F5D0E /* WinnerDetails.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDE254342D396140002F5D0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDE254392D396192002F5D0E /* WinnerList.swift */,
+				BDE254602D398170002F5D0E /* WinnerRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BDE254352D396145002F5D0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDE254362D39614A002F5D0E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BDE254372D39614F002F5D0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDE2545C2D39800C002F5D0E /* WinnerListData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDE254382D396153002F5D0E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BDE2545E2D398092002F5D0E /* WinnerListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BDE2543E2D396CC3002F5D0E /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				BDE254512D39785B002F5D0E /* ImageConstant.swift */,
+				BDE254402D396CE3002F5D0E /* FontConstant.swift */,
+				BDE254422D396D9D002F5D0E /* AppConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		BDE254442D396E20002F5D0E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BDE254452D396E2C002F5D0E /* Text + Extensions.swift */,
+				BDE254472D396F59002F5D0E /* Color + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BDE254492D397029002F5D0E /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				BDE2544A2D397036002F5D0E /* Text + Modifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		BDE2544E2D3976BF002F5D0E /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				BDE2544F2D3976DD002F5D0E /* CustomHeader.swift */,
+			);
+			path = CommonView;
+			sourceTree = "<group>";
+		};
+		BDE254532D397AED002F5D0E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BDE254562D397B00002F5D0E /* Almarai-Bold.ttf */,
+				BDE254572D397B00002F5D0E /* Almarai-ExtraBold.ttf */,
+				BDE254542D397B00002F5D0E /* Almarai-Light.ttf */,
+				BDE254552D397B00002F5D0E /* Almarai-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +341,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE254582D397D31002F5D0E /* Almarai-Bold.ttf in Resources */,
+				BDE254592D397D31002F5D0E /* Almarai-ExtraBold.ttf in Resources */,
+				BDE2545A2D397D31002F5D0E /* Almarai-Light.ttf in Resources */,
+				BDE2545B2D397D31002F5D0E /* Almarai-Regular.ttf in Resources */,
 				BDE254202D395B6C002F5D0E /* Preview Assets.xcassets in Resources */,
 				BDE2541D2D395B6C002F5D0E /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +357,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE2545F2D398092002F5D0E /* WinnerListViewModel.swift in Sources */,
 				BDE2541B2D395B6A002F5D0E /* ContentView.swift in Sources */,
 				BDE254192D395B6A002F5D0E /* DemoAppApp.swift in Sources */,
+				BDE2545D2D39800C002F5D0E /* WinnerListData.swift in Sources */,
+				BDE254612D398170002F5D0E /* WinnerRowView.swift in Sources */,
+				BDE2544B2D397036002F5D0E /* Text + Modifier.swift in Sources */,
+				BDE2542E2D395F77002F5D0E /* AppRoute.swift in Sources */,
+				BDE254412D396CE3002F5D0E /* FontConstant.swift in Sources */,
+				BDE2543C2D3961B7002F5D0E /* WinnerDetails.swift in Sources */,
+				BDE254522D39785B002F5D0E /* ImageConstant.swift in Sources */,
+				BDE254482D396F59002F5D0E /* Color + Extensions.swift in Sources */,
+				BDE2543A2D396192002F5D0E /* WinnerList.swift in Sources */,
+				BDE254302D395FB9002F5D0E /* NavigationService.swift in Sources */,
+				BDE254462D396E2C002F5D0E /* Text + Extensions.swift in Sources */,
+				BDE254432D396D9D002F5D0E /* AppConstant.swift in Sources */,
+				BDE254502D3976DD002F5D0E /* CustomHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,11 +508,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,11 +538,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,10 +7,14 @@
 
 import SwiftUI
 
+/// The main entry point for the DemoApp application.
+
 @main
 struct DemoAppApp: App {
+    // MARK: - Body
     var body: some Scene {
         WindowGroup {
+            // The root view of the application.
             ContentView()
         }
     }
