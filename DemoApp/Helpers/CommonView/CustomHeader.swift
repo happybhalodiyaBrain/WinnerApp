@@ -8,30 +8,39 @@
 import Foundation
 import SwiftUI
 
+/// A reusable header view with customizable options for navigation and actions.
 struct CustomHeader: View {
     
+    // MARK: - Properties
+    /// The greeting or title text displayed in the header.
     let greetingText: String
+    /// The action performed when the back button is tapped.
     let onBackTapped: () -> Void
+    /// Flag to determine whether to show right-side buttons (heart and cart).
     let showRightButtons: Bool
+    /// Flag to determine whether to show the back button.
     let showBackButton: Bool
+    /// The badge count for the cart button.
     let cartBadgeCount: Int
     
+    // MARK: - Body
     var body: some View {
         HStack {
+            // MARK: Back Button
             if showBackButton {
                 Button(action: onBackTapped) {
                     Image(Icons.ic_backButton.rawValue)
                         .frame(width: 24, height: 24)
                 }
             }
-            // Greeting text
+            // MARK: Greeting Text
             Text(greetingText)
                 .headerTextStyle()
                 .padding(.leading,showBackButton ? 15: 16)
             
             Spacer()
             
-            // MARK: - Right Buttons
+            // MARK: Right Buttons Section
             if showRightButtons {
                 HStack(spacing: 27) {
                     // Heart Icon Button

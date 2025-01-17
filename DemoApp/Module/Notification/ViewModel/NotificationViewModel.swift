@@ -6,10 +6,12 @@
 //
 
 import Foundation
+// MARK: - Notification ViewModel
 
 class NotificationViewModel: ObservableObject {
     
-    
+    // MARK: - Published Properties
+    /// The list of notifications to be displayed in the app.
     @Published var notificationList: [NotificationData] = [
         NotificationData(
             title: "Lorem ipsum dolor sit amet, consectetur",

@@ -29,5 +29,9 @@ struct ContentView: View {
         }
         // Pass `navigationService` as an environment object to child views.
         .environmentObject(navigationService)
+        .onAppear(){
+            deviceScreenSize = UIScreen.main.bounds.size
+            
+        }
     }
 }

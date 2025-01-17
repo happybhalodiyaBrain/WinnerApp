@@ -7,8 +7,10 @@
 
 import Foundation
 
+// MARK: - Notification Data Model
+/// A struct representing the data model for a notification.
 struct NotificationData : Identifiable {
-   
+    // MARK: - Properties
     let id = UUID()
     let title : String
     let datetime : String
