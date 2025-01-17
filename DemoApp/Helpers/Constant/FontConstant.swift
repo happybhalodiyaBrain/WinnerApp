@@ -7,7 +7,7 @@
 
 import Foundation
 
-var designSize: CGSize = CGSize(width: 375.0, height: 812.0) // size as per figma
+var designSize: CGSize = CGSize(width: 375.0, height: 812.0) // size as per xd
 var deviceScreenSize: CGSize = CGSize(width: 375.0, height: 812.0) // 15 pro
 var geometryHeight = deviceScreenSize.height // Global Height Constant of GeometryReader to use throught App
 var geometryWidth = deviceScreenSize.width // Global Width Constant of GeometryReader to use throught App

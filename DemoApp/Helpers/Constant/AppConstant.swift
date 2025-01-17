@@ -9,4 +9,5 @@ import Foundation
 
 struct Header {
     static let winnerList = "Winners of Previous Competition"
+    static let winnerDetails = "Winner of Competition Name"
 }

@@ -11,27 +11,35 @@ struct WinnerRowView: View {
     let winner: WinnerListData
         
         var body: some View {
-            HStack(spacing: 16) {
-                Image(winner.imageName)
+            
+            HStack {
+                Image(Icons.dummy.rawValue)
                     .resizable()
-                    .frame(width: 60, height: 60)
-                    .cornerRadius(8)
+                    .frame(width: 102, height: 58)
+                    .cornerRadius(4)
                 
-                VStack(alignment: .leading, spacing: 4) {
+                VStack(alignment: .leading, spacing: 11) {
                     Text(winner.description)
-                        .font(.system(size: 14, weight: .regular))
-                        .foregroundColor(.black)
-                        .lineLimit(2)
-                    
+                        .listTextStyle()
+                        .lineLimit(nil)
+                        .fixedSize(horizontal: false, vertical: true)
                     Text(winner.date)
-                        .font(.system(size: 12, weight: .light))
-                        .foregroundColor(.gray)
-                }
-                
+                        .smallTextStyle()
+                }.padding(.leading, 12)
+                    .padding(.trailing, 16)
                 Spacer()
             }
-            .padding(.vertical, 8)
+    
+            
+            
+                
         }
 }
 
-
+#Preview {
+    WinnerRowView(winner:WinnerListData(
+        imageName: "placeholder_image",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        date: "23 July 2023"
+    ))
+}

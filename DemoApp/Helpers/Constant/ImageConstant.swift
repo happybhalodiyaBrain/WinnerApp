@@ -9,4 +9,6 @@ import Foundation
 
 enum Icons : String {
     case ic_backButton = "ic_backButton"
+    case dummy = "dummy"
+    case rectImage = "rectImage"
 }

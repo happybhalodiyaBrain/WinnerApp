@@ -10,26 +10,22 @@ import SwiftUI
 
 extension Text {
     func headerTextStyle() -> some View {
-        self.textStyle(size: 14, color: Color(UIColor.appclr000000),
+        self.textStyle(size: 20, color: Color(UIColor.appclr000000),
                    fontName: FontConstant.Almarai_Bold)
     }
-    
-    
     func listTextStyle() -> some View  {
         self
             .textStyle(size: 14, color: Color(UIColor.appclr000000),
-                       fontName: FontConstant.Almarai_Regular) as! Text
+                       fontName: FontConstant.Almarai_Regular)
     }
-    
     func smallTextStyle() -> some View {
         self
             .textStyle(size: 10, color: Color(UIColor.appclr707070),
-                       fontName: FontConstant.Almarai_Regular) as! Text
+                       fontName: FontConstant.Almarai_Regular)
     }
-    
     func titleTextStyle() -> some View  {
         self
             .textStyle(size: 14, color: Color(UIColor.appclr707070),
-                       fontName: FontConstant.Almarai_Bold) as! Text
+                       fontName: FontConstant.Almarai_Bold) 
     }
 }

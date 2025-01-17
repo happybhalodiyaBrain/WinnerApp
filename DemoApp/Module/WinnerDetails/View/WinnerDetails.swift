@@ -9,7 +9,11 @@ import SwiftUI
 
 struct WinnerDetails: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            CustomHeader(
+                greetingText: Header.winnerDetails, onBackTapped: {}, showRightButtons: false, showBackButton : false, cartBadgeCount: 3)
+            Spacer()
+        }
     }
 }
 

@@ -28,7 +28,7 @@ struct TextStyle: ViewModifier {
         content
             .font(.custom(fontName, size: FontSizeManager.scaledFont(size: size))) // Sets the font with the specified size
             .foregroundColor(color)           // Sets the text color
-            .multilineTextAlignment(.center)  // Centers the text
+            .multilineTextAlignment(.leading)  // Centers the text
     }
 }
 

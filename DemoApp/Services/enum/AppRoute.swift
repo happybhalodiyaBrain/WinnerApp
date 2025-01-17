@@ -16,4 +16,7 @@ enum AppRoutes: Hashable {
     
     /// Route to the winner details screen.
     case winnerDetails
+    
+    /// Route to the notification screen.
+    case notification
 }

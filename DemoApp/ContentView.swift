@@ -19,6 +19,8 @@ struct ContentView: View {
         Group {
             // Render views based on the current navigation route.
             switch navigationService.currentRoute {
+            case .notification:
+                Notification()
             case .winnerList:
                 WinnerList() 
             case .winnerDetails:
