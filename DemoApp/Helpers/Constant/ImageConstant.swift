@@ -10,6 +10,7 @@ import Foundation
 /// Enum to manage the image assets used in the app.
 enum Icons : String {
     case ic_backButton = "ic_backButton"
+    case ic_dropDown = "ic_dropDown"
     case dummy = "dummy"
     case rectImage = "rectImage"
 }

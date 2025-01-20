@@ -28,7 +28,7 @@ class NavigationService: ObservableObject {
     /// The current route based on the top of the navigation stack.
     
     var currentRoute: AppRoutes {
-        navigationPath.last ?? .notification
+        navigationPath.last ?? .orderAndReturn
     }
     
     // MARK: - Navigation Methods

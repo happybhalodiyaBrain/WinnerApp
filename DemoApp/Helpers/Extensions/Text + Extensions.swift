@@ -12,7 +12,7 @@ import SwiftUI
 extension Text {
     /// Applies a header text style to the `Text` view.
     func headerTextStyle() -> some View {
-        self.textStyle(size: 20, color: Color(UIColor.appclr000000),
+        self.textStyle(size: 14, color: Color(UIColor.appclr000000),
                    fontName: FontConstant.Almarai_Bold)
     }
     /// Applies a list item text style to the `Text` view.

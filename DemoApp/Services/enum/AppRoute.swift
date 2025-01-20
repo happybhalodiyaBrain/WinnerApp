@@ -19,4 +19,7 @@ enum AppRoutes: Hashable {
     
     /// Route to the notification screen.
     case notification
+    
+    /// Route to Order and Return form
+    case orderAndReturn
 }
