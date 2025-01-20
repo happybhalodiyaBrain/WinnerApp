@@ -14,7 +14,6 @@ struct Notification: View {
     // MARK: - Body
     var body: some View {
         VStack{
-            
             // MARK: Header Section
             CustomHeader(greetingText: Header.notification, onBackTapped: {}, showRightButtons: true, showBackButton : false, cartBadgeCount: 3)
             Spacer()
