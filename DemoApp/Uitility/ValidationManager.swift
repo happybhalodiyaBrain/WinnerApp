@@ -12,7 +12,7 @@ struct ValidationManager {
     // Validation for empty field
     static func isNotEmpty(_ value: String, fieldName: String) -> String? {
         if value.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-            return "\(fieldName) cannot be empty."
+            return "\(fieldName) \(ErrorMessages.err_cannotbeempty)"
         }
         return nil
     }
@@ -22,7 +22,7 @@ struct ValidationManager {
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
         if !emailPredicate.evaluate(with: email) {
-            return "Invalid email address."
+            return ErrorMessages.err_invalidEmail
         }
         return nil
     }
@@ -32,8 +32,18 @@ struct ValidationManager {
         let zipRegex = "^[0-9]{5}$"
         let zipPredicate = NSPredicate(format: "SELF MATCHES %@", zipRegex)
         if !zipPredicate.evaluate(with: zip) {
-            return "Invalid ZIP Code. It must be 5 digits."
+            return ErrorMessages.err_invalidZipCode
         }
         return nil
     }
+    
+    // Validation for Mobile Number (assuming 10 digits)
+       static func isValidMobileNumber(_ mobile: String) -> String? {
+           let mobileRegex = "^[0-9]{10}$" // Only digits, 10 characters long
+           let mobilePredicate = NSPredicate(format: "SELF MATCHES %@", mobileRegex)
+           if !mobilePredicate.evaluate(with: mobile) {
+               return ErrorMessages.err_invalidMobileNo
+           }
+           return nil
+       }
 }

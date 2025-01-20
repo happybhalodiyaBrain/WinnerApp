@@ -27,6 +27,8 @@ struct ContentView: View {
                 WinnerList() 
             case .winnerDetails:
                 WinnerDetails()
+            case .UserDetails:
+                UserDetails()
             }
             
         }
