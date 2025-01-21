@@ -13,6 +13,8 @@ enum Icons : String {
     case ic_dropDown = "ic_dropDown"
     case ic_locationPin = "ic_locationPin"
     case ic_dropOff = "ic_dropOff"
+    case ic_close = "ic_close"
+    case ic_filter = "ic_filter"
     case dummy = "dummy"
     case rectImage = "rectImage"
 }

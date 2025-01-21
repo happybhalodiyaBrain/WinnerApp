@@ -11,7 +11,7 @@ struct WinnerDetails: View {
     var body: some View {
         VStack{
             CustomHeader(
-                greetingText: Header.winnerDetails, onBackTapped: {}, showRightButtons: false, showBackButton : false, cartBadgeCount: 3)
+                greetingText: Header.winnerDetails, onBackTapped: {}, showRightButtons: false, showBackButton : false, cartBadgeCount: 3, isShowingFiler: false)
             Spacer()
         }
     }

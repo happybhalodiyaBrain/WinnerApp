@@ -16,9 +16,7 @@
 		BD0D95D12D3A4E9C000EC12E /* OfferNotificationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D95D02D3A4E9C000EC12E /* OfferNotificationData.swift */; };
 		BD0D95D32D3A5265000EC12E /* NotificationSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D95D22D3A5265000EC12E /* NotificationSectionHeader.swift */; };
 		BD0D95D52D3A52FF000EC12E /* OffersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D95D42D3A52FF000EC12E /* OffersCell.swift */; };
-		BD23477D2D3F5ED7000A679D /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = BD23477C2D3F5ED6000A679D /* location.json */; };
 		BD23477F2D3F60F2000A679D /* Bundle + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD23477E2D3F60F2000A679D /* Bundle + Extension.swift */; };
-		BD2347812D3F69D4000A679D /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2347802D3F69D4000A679D /* MapAnnotationView.swift */; };
 		BD5687A22D3E146300F89DFC /* OrderandReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5687A12D3E146300F89DFC /* OrderandReturn.swift */; };
 		BD5687A42D3E1BBB00F89DFC /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5687A32D3E1BBA00F89DFC /* FloatingTextField.swift */; };
 		BD5687A62D3E20C800F89DFC /* OrderFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5687A52D3E20C800F89DFC /* OrderFormData.swift */; };
@@ -31,6 +29,8 @@
 		BD5687BA2D3E473000F89DFC /* UserDetailsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5687B92D3E473000F89DFC /* UserDetailsData.swift */; };
 		BD5687BC2D3E473E00F89DFC /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5687BB2D3E473E00F89DFC /* UserDetailsViewModel.swift */; };
 		BD5687BE2D3E527200F89DFC /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5687BD2D3E527200F89DFC /* TimePicker.swift */; };
+		BDB3CB602D3FADE8008C089B /* LocationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3CB5F2D3FADE8008C089B /* LocationDetails.swift */; };
+		BDB3CB622D3FCAFB008C089B /* OpenSans_Condensed-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDB3CB612D3FCAD2008C089B /* OpenSans_Condensed-SemiBold.ttf */; };
 		BDE254192D395B6A002F5D0E /* DemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE254182D395B6A002F5D0E /* DemoAppApp.swift */; };
 		BDE2541B2D395B6A002F5D0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2541A2D395B6A002F5D0E /* ContentView.swift */; };
 		BDE2541D2D395B6C002F5D0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE2541C2D395B6C002F5D0E /* Assets.xcassets */; };
@@ -69,9 +69,7 @@
 		BD0D95D02D3A4E9C000EC12E /* OfferNotificationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferNotificationData.swift; sourceTree = "<group>"; };
 		BD0D95D22D3A5265000EC12E /* NotificationSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSectionHeader.swift; sourceTree = "<group>"; };
 		BD0D95D42D3A52FF000EC12E /* OffersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCell.swift; sourceTree = "<group>"; };
-		BD23477C2D3F5ED6000A679D /* location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location.json; sourceTree = "<group>"; };
 		BD23477E2D3F60F2000A679D /* Bundle + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle + Extension.swift"; sourceTree = "<group>"; };
-		BD2347802D3F69D4000A679D /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		BD5687A12D3E146300F89DFC /* OrderandReturn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderandReturn.swift; sourceTree = "<group>"; };
 		BD5687A32D3E1BBA00F89DFC /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
 		BD5687A52D3E20C800F89DFC /* OrderFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFormData.swift; sourceTree = "<group>"; };
@@ -84,6 +82,8 @@
 		BD5687B92D3E473000F89DFC /* UserDetailsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsData.swift; sourceTree = "<group>"; };
 		BD5687BB2D3E473E00F89DFC /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		BD5687BD2D3E527200F89DFC /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
+		BDB3CB5F2D3FADE8008C089B /* LocationDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetails.swift; sourceTree = "<group>"; };
+		BDB3CB612D3FCAD2008C089B /* OpenSans_Condensed-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans_Condensed-SemiBold.ttf"; sourceTree = "<group>"; };
 		BDE254152D395B6A002F5D0E /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE254182D395B6A002F5D0E /* DemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppApp.swift; sourceTree = "<group>"; };
 		BDE2541A2D395B6A002F5D0E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -170,14 +170,6 @@
 				BD0D95D42D3A52FF000EC12E /* OffersCell.swift */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		BD23477A2D3F5E56000A679D /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				BD23477C2D3F5ED6000A679D /* location.json */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		BD56879D2D3E129400F89DFC /* OrderReturnForm */ = {
@@ -267,7 +259,6 @@
 		BDE254172D395B6A002F5D0E /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				BD23477A2D3F5E56000A679D /* Data */,
 				BDE2543D2D39679F002F5D0E /* Info.plist */,
 				BDE2542B2D395D4F002F5D0E /* Resource */,
 				BDE2542A2D395D2E002F5D0E /* Uitility */,
@@ -468,6 +459,7 @@
 		BDE254532D397AED002F5D0E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				BDB3CB612D3FCAD2008C089B /* OpenSans_Condensed-SemiBold.ttf */,
 				BDE254562D397B00002F5D0E /* Almarai-Bold.ttf */,
 				BDE254572D397B00002F5D0E /* Almarai-ExtraBold.ttf */,
 				BDE254542D397B00002F5D0E /* Almarai-Light.ttf */,
@@ -490,7 +482,7 @@
 			isa = PBXGroup;
 			children = (
 				BDFEED382D3E73DD002A2191 /* MapView.swift */,
-				BD2347802D3F69D4000A679D /* MapAnnotationView.swift */,
+				BDB3CB5F2D3FADE8008C089B /* LocationDetails.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -569,8 +561,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDB3CB622D3FCAFB008C089B /* OpenSans_Condensed-SemiBold.ttf in Resources */,
 				BDE254582D397D31002F5D0E /* Almarai-Bold.ttf in Resources */,
-				BD23477D2D3F5ED7000A679D /* location.json in Resources */,
 				BDE254592D397D31002F5D0E /* Almarai-ExtraBold.ttf in Resources */,
 				BDE2545A2D397D31002F5D0E /* Almarai-Light.ttf in Resources */,
 				BDE2545B2D397D31002F5D0E /* Almarai-Regular.ttf in Resources */,
@@ -600,7 +592,6 @@
 				BD0D95D32D3A5265000EC12E /* NotificationSectionHeader.swift in Sources */,
 				BDE2544B2D397036002F5D0E /* Text + Modifier.swift in Sources */,
 				BDE2542E2D395F77002F5D0E /* AppRoute.swift in Sources */,
-				BD2347812D3F69D4000A679D /* MapAnnotationView.swift in Sources */,
 				BD5687A82D3E20DB00F89DFC /* OrderFormViewModel.swift in Sources */,
 				BDFEED392D3E73DD002A2191 /* MapView.swift in Sources */,
 				BD0D95C92D3A3578000EC12E /* NotificationData.swift in Sources */,
@@ -623,6 +614,7 @@
 				BDE254462D396E2C002F5D0E /* Text + Extensions.swift in Sources */,
 				BD5687BA2D3E473000F89DFC /* UserDetailsData.swift in Sources */,
 				BD5687AC2D3E284B00F89DFC /* CommonButton.swift in Sources */,
+				BDB3CB602D3FADE8008C089B /* LocationDetails.swift in Sources */,
 				BD0D95C12D3A2D48000EC12E /* winnerDetailData.swift in Sources */,
 				BDE254432D396D9D002F5D0E /* AppConstant.swift in Sources */,
 				BD0D95D12D3A4E9C000EC12E /* OfferNotificationData.swift in Sources */,
@@ -765,8 +757,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to provide accurate services.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "We need your location to show nearby pharmacies.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show nearby pharmacies.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show nearby stores.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -797,8 +790,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoApp/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to provide accurate services.";
 				INFOPLIST_KEY_NSLocationUsageDescription = "We need your location to show nearby pharmacies.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show nearby pharmacies.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show nearby stores.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

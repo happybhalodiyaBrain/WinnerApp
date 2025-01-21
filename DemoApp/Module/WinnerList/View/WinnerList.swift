@@ -16,7 +16,7 @@ struct WinnerList: View {
             
             // MARK: - Custom Header
             CustomHeader(
-                greetingText: Header.winnerList, onBackTapped: {}, showRightButtons: false, showBackButton : false, cartBadgeCount: 2)
+                greetingText: Header.winnerList, onBackTapped: {}, showRightButtons: false, showBackButton : false, cartBadgeCount: 2, isShowingFiler: false)
             
             // MARK: - Winners List
             /// A list displaying all winners using the data from the view model.

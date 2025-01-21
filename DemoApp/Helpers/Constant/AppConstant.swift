@@ -50,3 +50,9 @@ struct ErrorMessages {
     static let err_invalidZipCode = "Invalid ZIP Code. It must be 5 digits."
     static let err_invalidMobileNo =  "Invalid mobile number. It must be 10 digits."
 }
+
+struct locationDetails {
+    static let phone = "Phone:"
+    static let getDirection = "Get Direction"
+    static let call = "Call"
+}

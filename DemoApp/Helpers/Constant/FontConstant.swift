@@ -39,6 +39,7 @@ struct FontConstant {
     static let Almarai_ExtraBold = "Almarai-ExtraBold"
     static let Almarai_Light = "Almarai-Light"
     static let Almarai_Regular = "Almarai-Regular"
+    static let OpenSans_Condensed_SemiBold = "OpenSans_Condensed-SemiBold"
 }
 
 // MARK: - Font Size Manager

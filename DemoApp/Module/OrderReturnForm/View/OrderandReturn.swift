@@ -12,7 +12,7 @@ struct OrderandReturn: View {
     var body: some View {
         VStack{
             // Custom header with greeting text and back button
-            CustomHeader(greetingText: Header.orderAndReturn, onBackTapped: {}, showRightButtons: false, showBackButton : true, cartBadgeCount: 0)
+            CustomHeader(greetingText: Header.orderAndReturn, onBackTapped: {}, showRightButtons: false, showBackButton : true, cartBadgeCount: 0, isShowingFiler: false)
             ScrollView{
                 VStack(spacing: 24){
                     // Order ID input field

@@ -22,6 +22,8 @@ struct CustomHeader: View {
     let showBackButton: Bool
     /// The badge count for the cart button.
     let cartBadgeCount: Int
+    /// Filter button showing in right side
+    let isShowingFiler : Bool
     
     // MARK: - Body
     var body: some View {
@@ -79,14 +81,27 @@ struct CustomHeader: View {
                     }
                 }.padding(.trailing, 16)
             }
+            if(isShowingFiler){
+                HStack{
+                    Image(Icons.ic_filter.rawValue)
+                        .resizable()
+                        .frame(width: 16, height: 17)
+                    Text("Filter")
+                        .textStyle(size: 12,
+                                   color: Color(UIColor.appclr3F9ACC),
+                                   fontName: FontConstant.Almarai_Bold )
+                }.padding(.trailing, 18)
+            }
         }
         .padding(.horizontal)
         .padding(.vertical, 11)
         .background(Color.white) // Customize your background color
         .shadow(color: Color.black.opacity(0.2), radius: 2, x: 0, y: 1) // Add shadow below the header
+        
+        
     }
 }
 
 #Preview {
-    CustomHeader(greetingText: "Notification", onBackTapped: {}, showRightButtons: true, showBackButton : false, cartBadgeCount: 3)
+    CustomHeader(greetingText: "Notification", onBackTapped: {}, showRightButtons: false, showBackButton : true, cartBadgeCount: 3, isShowingFiler: true)
 }
