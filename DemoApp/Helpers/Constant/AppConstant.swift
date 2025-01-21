@@ -15,6 +15,7 @@ struct Header {
     static let notification = "Notification"
     static let orderAndReturn = "Order and Returns"
     static let fillTheFollowingData = "Kindly Fill the Following Data"
+    static let findaStore = "Find a Store"
 }
 
 struct InputFields {

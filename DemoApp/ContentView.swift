@@ -19,6 +19,8 @@ struct ContentView: View {
         Group {
             // Render views based on the current navigation route.
             switch navigationService.currentRoute {
+            case .mapView :
+                MapView()
             case .orderAndReturn :
                 OrderandReturn()
             case .notification:
@@ -27,7 +29,7 @@ struct ContentView: View {
                 WinnerList() 
             case .winnerDetails:
                 WinnerDetails()
-            case .UserDetails:
+            case .userDetails:
                 UserDetails()
             }
             

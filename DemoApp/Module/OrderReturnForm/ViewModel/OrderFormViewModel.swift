@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class OrderFormViewModel: ObservableObject {
     
@@ -77,13 +78,17 @@ class OrderFormViewModel: ObservableObject {
             print("Form submitted successfully with: \(formData)")
             onNavigateToSignupPage()
         } else {
+            onNavigateToSignupPage()
             // Print errors (or show them in the UI)
             print("Validation failed with errors: \(errorMessages)")
         }
     }
-    
+    /// dismiss keyboard
+    func dismissKeyboard() {
+          UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+      }
     /// Navigates to the user details page after form submission.
     func onNavigateToSignupPage () {
-        NavigationService.shared.push(to: .UserDetails)
+        NavigationService.shared.push(to: .userDetails)
     }
 }

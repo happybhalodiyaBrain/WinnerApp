@@ -23,5 +23,7 @@ enum AppRoutes: Hashable {
     /// Route to Order and Return form
     case orderAndReturn
     
-    case UserDetails
+    case userDetails
+    
+    case mapView
 }

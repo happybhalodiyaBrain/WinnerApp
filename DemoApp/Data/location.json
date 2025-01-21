@@ -1,0 +1,23 @@
+[
+  {
+    "name": "United Pharmacy 293",
+    "address": "1 Sheikh Mohammed bin Rashid Blvd - Downtown Dubai, Dubai, UAE",
+    "phone": "8002444445",
+    "latitude": 25.1972,
+    "longitude": 55.2744
+  },
+  {
+    "name": "Cedar River Shop",
+    "address": "5th Ave SE, Cedar Rapids, Iowa, USA",
+    "phone": "3191234567",
+    "latitude": 25.1980,
+    "longitude": 55.2750
+  },
+  {
+    "name": "Nick's Special Craft",
+    "address": "Maple Street NW, Dubai, UAE",
+    "phone": "8009876543",
+    "latitude": 25.1995,
+    "longitude": 55.2735
+  }
+]

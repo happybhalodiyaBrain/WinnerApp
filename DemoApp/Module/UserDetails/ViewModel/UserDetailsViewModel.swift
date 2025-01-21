@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// A ViewModel that manages the logic for user details form submission.
 
@@ -84,7 +85,13 @@ class UserDetailsViewModel: ObservableObject {
             print("Validation failed with errors: \(errorMessages)")
         }
     }
+    ///  Navigate to back screen 
     func onNavigateToBack () {
         NavigationService.shared.pop()
     }
+    /// dismiss keyboard
+     func dismissKeyboard() {
+           UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+       }
 }
+
