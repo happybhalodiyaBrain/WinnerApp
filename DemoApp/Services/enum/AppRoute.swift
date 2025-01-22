@@ -26,4 +26,6 @@ enum AppRoutes: Hashable {
     case userDetails
     
     case mapView
+    
+    case categoriesView
 }

@@ -20,6 +20,11 @@ extension UIColor {
     /// textfeild placeholder color
     static let appclrB6B7B7 = "clrB6B7B7"
     static let appclr3F9ACC = "clr3F9ACC"
+    static let appclrA1A1A1 = "clrA1A1A1"
+    
+    static let appclrF8F8CD = "clrF8F8CD"
+    
+    static let appclr011F79 = "clr011F79"
     
     // MARK: - Accent Colors
     /// Red color for error messages or alerts.
