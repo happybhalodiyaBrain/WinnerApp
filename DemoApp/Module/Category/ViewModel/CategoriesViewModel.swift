@@ -10,12 +10,42 @@ import SwiftUI
 
 class CategoriesViewModel: ObservableObject {
     @Published var categories: [Category] = [
-        Category( title: "Medications", imageName: CategoryImages.img_medications.rawValue, isSelected: false),
-        Category( title: "Hair Care", imageName: CategoryImages.img_hairCare.rawValue, isSelected: false),
-        Category( title: "Beauty & Skin Care", imageName: CategoryImages.img_beauty.rawValue, isSelected: true),
-        Category( title: "Oral Care", imageName: CategoryImages.img_oralCare.rawValue, isSelected: false),
-        Category( title: "Baby & Mom Care", imageName: CategoryImages.img_momCare.rawValue, isSelected: false),
-        Category( title: "Vitabiotics", imageName: CategoryImages.img_vitabiotics.rawValue, isSelected: false)
+        Category(
+            title: "Medications",
+            imageName: CategoryImages.img_medications.rawValue,
+            isSelected: false,
+            subCategories: [SubCategoriesData(title: "Face Care", imageName: CategoryImages.img_face.rawValue)]
+        ),
+        Category(
+            title: "Hair Care",
+            imageName: CategoryImages.img_hairCare.rawValue,
+            isSelected: false,
+            subCategories: [SubCategoriesData(title: "Face Care", imageName: CategoryImages.img_face.rawValue)]
+        ),
+        Category(
+            title: "Beauty & Skin Care",
+            imageName: CategoryImages.img_beauty.rawValue,
+            isSelected: true,
+            subCategories: [SubCategoriesData(title: "Face Care", imageName: CategoryImages.img_face.rawValue)]
+        ),
+        Category(
+            title: "Oral Care",
+            imageName: CategoryImages.img_oralCare.rawValue,
+            isSelected: false,
+            subCategories: [SubCategoriesData(title: "Face Care", imageName: CategoryImages.img_face.rawValue)]
+        ),
+        Category(
+            title: "Baby & Mom Care",
+            imageName: CategoryImages.img_momCare.rawValue,
+            isSelected: false,
+            subCategories: [SubCategoriesData(title: "Face Care", imageName: CategoryImages.img_face.rawValue)]
+        ),
+        Category(
+            title: "Vitabiotics",
+            imageName: CategoryImages.img_vitabiotics.rawValue,
+            isSelected: false,
+            subCategories: [SubCategoriesData(title: "Face Care", imageName: CategoryImages.img_face.rawValue)]
+        )
     ]
     
     @Published var carouselItems: [CarouselItem] = [
@@ -30,8 +60,13 @@ class CategoriesViewModel: ObservableObject {
 
     func selectCategory(_ category: Category) {
         categories = categories.map {
-            Category(title: $0.title, imageName: $0.imageName, isSelected: $0.id == category.id)
+            Category(
+                title: $0.title,
+                imageName: $0.imageName,
+                isSelected: $0.id == category.id, // Set isSelected only for the tapped category
+                subCategories: $0.subCategories  // Preserve subCategories
+            )
         }
-        selectedCategory = category
+        selectedCategory = categories.first(where: { $0.id == category.id })
     }
 }

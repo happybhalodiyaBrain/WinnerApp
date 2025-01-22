@@ -23,15 +23,14 @@ struct CategoriesView: View {
            
                 //MARK: - Carousel view
                 CarouselView(items: viewModel.carouselItems)
-                    .padding(.horizontal, 16)
-                    .padding(.top, 16)
-                
-                CategoryGridView(categories: $viewModel.categories) { selectedCategory in
-                    viewModel.selectCategory(selectedCategory)
-                        
-                }.padding(.top, 29)
                 .padding(.horizontal, 16)
-                Spacer()
+                .padding(.top, 16)
+            
+            CategoryGridView(categories: $viewModel.categories) { selectedCategory in
+                viewModel.selectCategory(selectedCategory)
+            }.padding(.top, 29)
+                .padding(.horizontal, 16)
+            Spacer()
             
         }
        

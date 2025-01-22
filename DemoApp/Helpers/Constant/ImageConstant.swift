@@ -28,4 +28,5 @@ enum CategoryImages : String {
     case img_momCare = "img_momCare"
     case img_oralCare = "img_oralCare"
     case img_vitabiotics = "img_vitabiotics"
+    case img_face = "img_face"
 }
