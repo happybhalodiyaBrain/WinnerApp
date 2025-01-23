@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CategoriesView: View {
     @StateObject private var viewModel = CategoriesViewModel()
+    @State private var expandedCategory: Category?
+    
     var body: some View {
         VStack {
             // MARK: - Custom Header
@@ -20,20 +22,29 @@ struct CategoriesView: View {
                 cartBadgeCount: 02,
                 isShowingFiler: false
             )
-           
-                //MARK: - Carousel view
-                CarouselView(items: viewModel.carouselItems)
+            
+            //MARK: - Carousel view
+            CarouselView(items: viewModel.carouselItems)
                 .padding(.horizontal, 16)
                 .padding(.top, 16)
             
-            CategoryGridView(categories: $viewModel.categories) { selectedCategory in
-                viewModel.selectCategory(selectedCategory)
-            }.padding(.top, 29)
-                .padding(.horizontal, 16)
-            Spacer()
-            
+            //MARK: - Category grid view 
+            CategoryGridView(
+                categories: $viewModel.categories,
+                onCategoryTap: { selectedCategory in
+                    // Handle category selection
+                    viewModel.selectCategory(selectedCategory)
+                },
+                onSubCategoryTap: { category, subCategory in
+                       // Handle subcategory selection from the main view
+                       viewModel.toggleSubCategorySelection(in: category, subCategory: subCategory)
+                   }
+            )   
+            .padding(.horizontal, 16)
+                .padding(.top, 29)
+              
         }
-       
+        
     }
 }
 

@@ -1,135 +1,74 @@
-//
-//  CategoryGridView.swift
-//  DemoApp
-//
-//  Created by Happy  Bhalodiya on 22/01/25.
-//
-
 import SwiftUI
 
+/// A grid view displaying categories and their expanded subcategories when selected.
+
 struct CategoryGridView: View {
+    /// Binding to the array of categories, allowing for updates to selection states.
     @Binding var categories: [Category]
+    /// Callback when a category is tapped.
     let onCategoryTap: (Category) -> Void
-    @State private var expandedCategory: UUID?
+    /// Callback when a subcategory is tapped.
+    let onSubCategoryTap: (Category, SubCategoriesData) -> Void
+    /// Grid layout with three flexible columns.
     let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
+    /// State object for managing the categories view model.
+    @StateObject private var viewModel = CategoriesViewModel()
+    
     var body: some View {
-        LazyVGrid(columns: columns, spacing: 16) {
-            ForEach(categories) { category in
-                VStack(spacing: 8) {
-                    Button(action: {
-                        withAnimation {
-                            expandedCategory = (expandedCategory == category.id) ? nil : category.id
-                            onCategoryTap(category)
-                        }
-                    }) {
-                        ZStack(alignment: .topLeading) {
-                            Image(category.imageName)
-                                .aspectRatio(contentMode: .fit)
-                                .cornerRadius(8)
-                            
-                            HStack{
-                                Text(category.title)
-                                    .textStyle(size: 13,color: Color(UIColor.appclr000000),
-                                               fontName: FontConstant.Almarai_Regular)
-                                Image(Icons.ic_smallDropDown.rawValue)
-                                    .resizable()
-                                    .frame(width: 8,height: 8)
-                                
-                            }.padding(.horizontal,8)
-                                .padding(.vertical, 11)
-                        }
-                        
-                        
-                        .frame(width: 104, height: 150)
-                        .background(Color(UIColor.appclrF8F8CD))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(category.isSelected ? Color(UIColor.appclr011F79) : Color.clear, lineWidth: 2)
-                        )
-                        .cornerRadius(8)
-                        .shadow(color: Color.black.opacity(0.1), radius: 4)
-                    }
-                    Spacer()
-                    // Expandable Subcategories
-                    if expandedCategory == category.id {
-                        VStack(alignment: .leading, spacing: 8) {
-                            ForEach(category.subCategories) { subCategory in
-                                HStack {
-                                    Image(CategoryImages.img_face.rawValue)
-                                        .resizable()
-                                        .frame(width: 24, height: 24)
-                                        .cornerRadius(4)
-                                    
-                                    Text(subCategory.title)
-                                        .font(.system(size: 12))
-                                        .foregroundColor(.black)
-                                    
-                                    Spacer()
-                                    Image(Icons.ic_smallDropDown.rawValue)
-                                        .resizable()
-                                        .frame(width: 24, height: 24)
-                                        .cornerRadius(4)
-                                }
-                                .padding()
-                                .cornerRadius(8)
+        ScrollView {
+            Grid(horizontalSpacing: 16, verticalSpacing: 16) {
+                // Iterate over the chunks of categories
+                ForEach(chunks(of: 3, in: categories), id: \.self) { chunk in
+                    GridRow {
+                        ForEach(chunk, id: \.self) { category in
+                            VStack(spacing: 8) {
+                                // Category Card for each item
+                                CategoryCard(category: category, onCategoryTap: { tappedCategory in
+                                    withAnimation {
+                                        onCategoryTap(tappedCategory)
+                                    }
+                                })
                             }
                         }
-                        .padding(.top, 8)
-                        .transition(.opacity) // Smooth transition
+                    }
+                    
+                    // Show the expanded view for each tapped category
+                    ForEach(Array(chunk.enumerated()), id: \.element.self) { index, category in
+                        if category.isSelected  {
+                            VStack{
+                                if index == 0 { // First element
+                                    CustomDivider(color: Color(UIColor.appclr0A195C), lineWidth: 1, borderWidth: 1, alignment: .leading)
+                                } else if index == chunk.count - 1 { // Last element
+                                    CustomDivider(color: Color(UIColor.appclr0A195C), lineWidth: 1, borderWidth: 1, alignment: .trailing)
+                                } else { // Center element
+                                    CustomDivider(color: Color(UIColor.appclr0A195C), lineWidth: 1, borderWidth: 1, alignment: .center)
+                                }
+                                
+                                ExpandedCategoryView(category: category,
+                                                     onSubCategoryTap: { subCategory in
+                                    onSubCategoryTap(category, subCategory)
+                                })
+                                .frame(maxWidth: .infinity) // Ensure full width
+                            }
+                        }
                     }
                 }
             }
         }
-        .padding(.horizontal, 16)
     }
-}
-
-#Preview {
-    // Sample Categories for Preview
-    @State var sampleCategories = [
-        Category(
-            title: "Medications",
-            imageName: CategoryImages.img_medications.rawValue,
-            isSelected: false,
-            subCategories: [
-                SubCategoriesData(title: "Face Care", imageName: CategoryImages.img_face.rawValue),
-                SubCategoriesData(title: "Face Care", imageName: CategoryImages.img_face.rawValue)]
-        ),
-        Category(
-            title: "Hair Care",
-            imageName: CategoryImages.img_hairCare.rawValue,
-            isSelected: false,
-            subCategories: [SubCategoriesData(title: "Face Care", imageName: CategoryImages.img_face.rawValue)]
-        ),
-        Category(
-            title: "Beauty & Skin Care",
-            imageName: CategoryImages.img_beauty.rawValue,
-            isSelected: true,
-            subCategories: [SubCategoriesData(title: "Face Care", imageName: CategoryImages.img_face.rawValue)]
-        ),
-        Category(
-            title: "Oral Care",
-            imageName: CategoryImages.img_oralCare.rawValue,
-            isSelected: false,
-            subCategories: [SubCategoriesData(title: "Face Care", imageName: CategoryImages.img_face.rawValue)]
-        ),
-        Category(
-            title: "Baby & Mom Care",
-            imageName: CategoryImages.img_momCare.rawValue,
-            isSelected: false,
-            subCategories: [SubCategoriesData(title: "Face Care", imageName: CategoryImages.img_face.rawValue)]
-        ),
-        Category(
-            title: "Vitabiotics",
-            imageName: CategoryImages.img_vitabiotics.rawValue,
-            isSelected: false,
-            subCategories: [SubCategoriesData(title: "Face Care", imageName: CategoryImages.img_face.rawValue)]
-        )
-    ]
     
-    return CategoryGridView(categories: $sampleCategories) { category in
-        // Handle category tap for preview
-        print("\(category.title) tapped")
+    /// Helper method to divide an array into chunks of a specified size.
+        /// - Parameters:
+        ///   - size: The size of each chunk.
+        ///   - array: The array to chunk.
+        /// - Returns: A 2D array where each inner array represents a chunk of the original array.
+    private func chunks(of size: Int, in array: [Category]) -> [[Category]] {
+        var chunks: [[Category]] = []
+        for i in stride(from: 0, to: array.count, by: size) {
+            let chunk = Array(array[i..<min(i + size, array.count)])
+            chunks.append(chunk)
+        }
+        return chunks
     }
 }

@@ -35,6 +35,7 @@ struct InputFields {
 
 struct Buttons {
     static let btn_submit = "Submit"
+    static let btn_viewAll = "View All"
 }
 
 struct ErrorMessages {

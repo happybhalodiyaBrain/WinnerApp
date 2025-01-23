@@ -24,6 +24,7 @@ extension UIColor {
     
     static let appclrF8F8CD = "clrF8F8CD"
     
+    static let appclrFAFAFA = "clrFAFAFA"
     static let appclr011F79 = "clr011F79"
     
     // MARK: - Accent Colors

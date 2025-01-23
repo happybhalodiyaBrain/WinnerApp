@@ -29,4 +29,6 @@ enum CategoryImages : String {
     case img_oralCare = "img_oralCare"
     case img_vitabiotics = "img_vitabiotics"
     case img_face = "img_face"
+    case img_bodyPowder = "img_bodyPowder"
+    case img_deodorants = "img_deodorants"
 }

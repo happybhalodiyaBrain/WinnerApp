@@ -7,10 +7,15 @@
 
 import SwiftUI
 
+/// A custom carousel view that displays a series of images with a custom page indicator.
+
 struct CarouselView: View {
+    /// Array of carousel items to display in the carousel.
     let items: [CarouselItem]
+    /// The currently displayed page in the carousel.
     @State private var currentPage = 0
     var body: some View {
+        
         ZStack(alignment: .bottom) {
             // Carousel with TabView
             TabView(selection: $currentPage) {
